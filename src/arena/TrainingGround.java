@@ -1,8 +1,8 @@
+package arena;
 
 import heroes.*;
 import enemies.*;
 
-// Main file for testing the creation of hero and enemy objects, as well as their interactions.
 public class TrainingGround {
 
     public static void main(String[] args) {

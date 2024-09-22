@@ -1,6 +1,8 @@
 package enemies;
 
-public class Enemy {
+import interfaces.Mortal;
+
+public class Enemy implements Mortal {
 
     private int health;
 
@@ -20,6 +22,11 @@ public class Enemy {
         if (damage > 0) {
             setHealth(getHealth() - damage);
         }
-        System.out.println(String.format("Enemy health remaining: %d", getHealth()));
+        System.out.println(String.format("Enemy health remaining: %d. Enemy is %s.", getHealth(), isAlive() ? "alive" : "dead"));
+    }
+
+    @Override
+    public boolean isAlive() {
+        return health > 0;
     }
 }

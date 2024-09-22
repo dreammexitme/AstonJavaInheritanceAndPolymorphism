@@ -13,6 +13,6 @@ public class Hero {
     }
 
     public void attackEnemy() {
-        System.out.println(String.format("Hero \"%s\" attacks enemy.", getName()));
+        System.out.println(String.format("Hero %s attacks enemy.", getName()));
     }
 }
